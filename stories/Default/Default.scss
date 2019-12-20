@@ -1,0 +1,12 @@
+.default {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+
+  div {
+    font-size: 16px;
+  }
+}
