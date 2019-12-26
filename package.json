@@ -89,6 +89,7 @@
     "react",
     "story-tab",
     "storytab",
-    "storybook"
+    "storybook",
+    "cli"
   ]
 }
