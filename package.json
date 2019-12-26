@@ -1,6 +1,6 @@
 {
   "name": "story-tab-react",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "StoryTab - React",
   "main": "./dist/story-tab-react.umd.js",
   "module": "./dist/story-tab-react.es5.js",
