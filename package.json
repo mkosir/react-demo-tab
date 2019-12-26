@@ -1,9 +1,9 @@
 {
-  "name": "story-tab-template-react",
+  "name": "story-tab-react",
   "version": "1.0.8",
-  "description": "StoryTab Template - React",
-  "main": "./dist/story-tab-template-react.umd.js",
-  "module": "./dist/story-tab-template-react.es5.js",
+  "description": "StoryTab - React",
+  "main": "./dist/story-tab-react.umd.js",
+  "module": "./dist/story-tab-react.es5.js",
   "typings": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -77,14 +77,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkosir/story-tab-template-react.git"
+    "url": "git+https://github.com/mkosir/story-tab-react.git"
   },
   "author": "Marko Kosir <kosir.mar@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mkosir/story-tab-template-react/issues"
+    "url": "https://github.com/mkosir/story-tab-react/issues"
   },
-  "homepage": "https://github.com/mkosir/story-tab-template-react#readme",
+  "homepage": "https://github.com/mkosir/story-tab-react#readme",
   "keywords": [
     "react",
     "story-tab",

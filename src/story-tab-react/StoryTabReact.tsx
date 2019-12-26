@@ -9,7 +9,7 @@ import codeImg from './img/jsx.png';
 import styleImgSass from './img/sass.png';
 import styleImgCSS from './img/css.png';
 
-import './StoryTabTemplateReact.scss';
+import './StoryTabReact.scss';
 
 type LocalStorage = {
   mainTabIndex: number;
@@ -42,13 +42,7 @@ type Props = {
   styleExt?: 'css' | 'scss';
 };
 
-const StoryTabTemplateReact: FC<Props> = ({
-  code,
-  style,
-  codeExt = 'jsx',
-  styleExt = 'css',
-  children,
-}) => {
+const StoryTabReact: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }) => {
   const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>('story-tab', {
     mainTabIndex: 0,
     codeTabIndex: 0,
@@ -109,4 +103,4 @@ const StoryTabTemplateReact: FC<Props> = ({
   );
 };
 
-export default StoryTabTemplateReact;
+export default StoryTabReact;

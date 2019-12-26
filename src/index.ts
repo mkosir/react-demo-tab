@@ -1,3 +1,3 @@
-import StoryTabTemplateReact from './story-tab-template-react/StoryTabTemplateReact';
+import StoryTabReact from './story-tab-react/StoryTabReact';
 
-export default StoryTabTemplateReact;
+export default StoryTabReact;
