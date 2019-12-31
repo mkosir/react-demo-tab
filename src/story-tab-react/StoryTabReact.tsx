@@ -9,8 +9,6 @@ import codeImg from './img/jsx.png';
 import styleImgSass from './img/sass.png';
 import styleImgCSS from './img/css.png';
 
-import './StoryTabReact.scss';
-
 type LocalStorage = {
   mainTabIndex: number;
   codeTabIndex: number;
@@ -65,7 +63,7 @@ const StoryTabReact: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'cs
         <Tab>Code</Tab>
       </TabList>
       <TabPanel className="story-tab-demo">{children}</TabPanel>
-      <TabPanel className="story-tab-code">
+      <TabPanel style={{ fontSize: '14px' }} className="story-tab-code">
         <Tabs
           defaultIndex={tabIndex.codeTabIndex}
           onSelect={(index: number) =>
