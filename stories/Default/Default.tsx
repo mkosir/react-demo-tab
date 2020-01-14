@@ -1,10 +1,10 @@
 import React from 'react';
 
-import StoryTab from '../../src';
+import ReactDocTabTemplate from '../../src';
 import './Default.scss';
 
 const code = `<div className="default">
-  StoryTab <div>Default Example</div>
+  ReactDocTabTemplate <div>Default Example</div>
 </div>`;
 const style = `.default {
   margin-top: 10vh;
@@ -19,12 +19,12 @@ const style = `.default {
   }
 }`;
 
-const StoryTabDefault = () => (
-  <StoryTab code={code} style={style} codeExt="tsx" styleExt="scss">
+const ReactDocTabTemplateDefault = () => (
+  <ReactDocTabTemplate code={code} style={style} codeExt="tsx" styleExt="scss">
     <div className="default">
-      StoryTab <div>Default Example</div>
+      ReactDocTabTemplate <div>Default Example</div>
     </div>
-  </StoryTab>
+  </ReactDocTabTemplate>
 );
 
-export default StoryTabDefault;
+export default ReactDocTabTemplateDefault;

@@ -1,9 +1,9 @@
 {
-  "name": "story-tab-react",
-  "version": "1.0.11",
-  "description": "StoryTab - React",
-  "main": "./dist/story-tab-react.umd.js",
-  "module": "./dist/story-tab-react.es5.js",
+  "name": "react-doc-tab-template",
+  "version": "1.0.12",
+  "description": "React DocTab Template",
+  "main": "./dist/react-doc-tab-template.umd.js",
+  "module": "./dist/react-doc-tab-template.es5.js",
   "typings": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -77,19 +77,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkosir/story-tab-react.git"
+    "url": "git+https://github.com/mkosir/react-doc-tab-template.git"
   },
   "author": "Marko Kosir <kosir.mar@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mkosir/story-tab-react/issues"
+    "url": "https://github.com/mkosir/react-doc-tab-template/issues"
   },
-  "homepage": "https://github.com/mkosir/story-tab-react#readme",
+  "homepage": "https://github.com/mkosir/react-doc-tab-template#readme",
   "keywords": [
     "react",
-    "story-tab",
-    "storytab",
-    "storybook",
+    "doc-tab",
+    "doctab",
     "cli"
   ]
 }

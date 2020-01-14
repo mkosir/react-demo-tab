@@ -1,14 +1,14 @@
-# StoryTab 📑 - React
+# React DocTab 📑 Template
 
 [![npm version][npm-badge]][npm-url]
 [![Build Status][build-badge]][build-url]
 
-_[StoryTab](https://github.com/mkosir/story-tab) for React components_
+_[React DocTab](https://github.com/mkosir/react-doc-tab)_ Template
 
 ## Install
 
-- npm `npm install story-tab-react`
-- yarn `yarn add story-tab-react`
+- npm `npm install react-doc-tab-template`
+- yarn `yarn add react-doc-tab-template`
 
 ## Development
 
@@ -30,11 +30,11 @@ npm link # link your local repo to your global packages
 npm run build:watch # build the files and watch for changes
 ```
 
-Clone project repo that you wish to test with story-tab-react library and run:
+Clone project repo that you wish to test with react-doc-tab-template library and run:
 
 ```bash
 npm install
-npm link story-tab-react # link your local copy into this project's node_modules
+npm link react-doc-tab-template # link your local copy into this project's node_modules
 npm start
 ```
 
@@ -44,7 +44,7 @@ npm start
 
 All contributions are welcome!
 
-[npm-url]: https://www.npmjs.com/package/story-tab-react
-[npm-badge]: https://img.shields.io/npm/v/story-tab-react.svg
-[build-badge]: https://travis-ci.com/mkosir/story-tab-react.svg
-[build-url]: https://travis-ci.com/mkosir/story-tab-react
+[npm-url]: https://www.npmjs.com/package/react-doc-tab-template
+[npm-badge]: https://img.shields.io/npm/v/react-doc-tab-template.svg
+[build-badge]: https://travis-ci.com/mkosir/react-doc-tab-template.svg
+[build-url]: https://travis-ci.com/mkosir/react-doc-tab-template

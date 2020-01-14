@@ -3,6 +3,6 @@ import { create } from '@storybook/theming/create';
 export default create({
   base: 'light',
 
-  brandTitle: 'StoryTab 📑 - React',
-  brandUrl: 'https://github.com/mkosir/story-tab-react',
+  brandTitle: 'React DocTab 📑 Template',
+  brandUrl: 'https://github.com/mkosir/react-doc-tab-template',
 });

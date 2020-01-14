@@ -14,7 +14,7 @@ export default {
   output: [
     {
       file: pkg.main,
-      name: 'story-tab-react',
+      name: 'react-doc-tab-template',
       format: 'umd',
       sourcemap: true,
       globals: {
