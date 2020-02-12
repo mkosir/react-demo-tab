@@ -1,4 +1,4 @@
-# React DocTab 📑 Template
+# React DemoTab 📑
 
 [![npm version][npm-badge]][npm-url]
 [![Build Status][build-badge]][build-url]
