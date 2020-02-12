@@ -9,7 +9,7 @@ Instead of manually creating demos, automate the process with [DemoTab CLI tool]
 
 ## Install
 
-npm `npm install -D react-demo-tab`
+npm `npm install -D react-demo-tab`  
 yarn `yarn add -D react-demo-tab`
 
 ## Development
