@@ -3,7 +3,9 @@
 [![npm version][npm-badge]][npm-url]
 [![Build Status][build-badge]][build-url]
 
-_[React DocTab](https://github.com/mkosir/react-doc-tab)_ Template
+_[React DemoTab](https://github.com/mkosir/react-doc-tab)_
+
+Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-doc-tab)
 
 ## Install
 
