@@ -5,7 +5,7 @@
 
 _[React DemoTab](https://github.com/mkosir/react-demo-tab)_
 
-Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-doc-tab).
+Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-demo-tab-cli).
 
 ## Install
 
@@ -32,11 +32,11 @@ npm link # link your local repo to your global packages
 npm run build:watch # build the files and watch for changes
 ```
 
-Clone project repo that you wish to test with react-doc-tab-template library and run:
+Clone project repo that you wish to test with react-demo-tab library and run:
 
 ```bash
 npm install
-npm link react-doc-tab-template # link your local copy into this project's node_modules
+npm link react-demo-tab # link your local copy into this project's node_modules
 npm start
 ```
 
@@ -46,7 +46,7 @@ npm start
 
 All contributions are welcome!
 
-[npm-url]: https://www.npmjs.com/package/react-doc-tab-template
-[npm-badge]: https://img.shields.io/npm/v/react-doc-tab-template.svg
-[build-badge]: https://travis-ci.com/mkosir/react-doc-tab-template.svg
-[build-url]: https://travis-ci.com/mkosir/react-doc-tab-template
+[npm-url]: https://www.npmjs.com/package/react-demo-tab
+[npm-badge]: https://img.shields.io/npm/v/react-demo-tab.svg
+[build-badge]: https://travis-ci.com/mkosir/react-demo-tab.svg
+[build-url]: https://travis-ci.com/mkosir/react-demo-tab
