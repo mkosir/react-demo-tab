@@ -5,7 +5,7 @@
 
 _[React DemoTab](https://github.com/mkosir/react-doc-tab)_
 
-Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-doc-tab)
+Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-doc-tab).
 
 ## Install
 
