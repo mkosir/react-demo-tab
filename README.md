@@ -3,14 +3,14 @@
 [![npm version][npm-badge]][npm-url]
 [![Build Status][build-badge]][build-url]
 
-_[React DemoTab](https://github.com/mkosir/react-doc-tab)_
+_[React DemoTab](https://github.com/mkosir/react-demo-tab)_
 
 Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-doc-tab).
 
 ## Install
 
-- npm `npm install react-doc-tab-template`
-- yarn `yarn add react-doc-tab-template`
+npm `npm install -D react-demo-tab`
+yarn `yarn add -D react-demo-tab`
 
 ## Development
 
