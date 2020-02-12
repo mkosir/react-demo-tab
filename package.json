@@ -1,9 +1,9 @@
 {
-  "name": "react-doc-tab-template",
-  "version": "1.0.12",
+  "name": "react-demo-tab",
+  "version": "1.2.1",
   "description": "React DocTab Template",
-  "main": "./dist/react-doc-tab-template.umd.js",
-  "module": "./dist/react-doc-tab-template.es5.js",
+  "main": "./dist/react-demo-tab.umd.js",
+  "module": "./dist/react-demo-tab.es5.js",
   "typings": "./dist/index.d.ts",
   "files": [
     "dist"
@@ -21,40 +21,40 @@
     "validate": "npm run lint && npm run lint-prettier && npm run build"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@rollup/plugin-image": "^2.0.0",
-    "@storybook/addon-actions": "^5.2.8",
-    "@storybook/addon-knobs": "^5.2.8",
-    "@storybook/addon-links": "^5.2.8",
-    "@storybook/addons": "^5.2.8",
-    "@storybook/react": "^5.2.8",
-    "@types/react": "^16.9.17",
-    "@types/react-dom": "^16.9.4",
-    "@typescript-eslint/eslint-plugin": "^2.12.0",
-    "@typescript-eslint/parser": "^2.12.0",
+    "@babel/core": "^7.8.4",
+    "@rollup/plugin-image": "^2.0.4",
+    "@storybook/addon-actions": "^5.3.13",
+    "@storybook/addon-knobs": "^5.3.13",
+    "@storybook/addon-links": "^5.3.13",
+    "@storybook/addons": "^5.3.13",
+    "@storybook/react": "^5.3.13",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
     "babel-loader": "^8.0.6",
-    "eslint": "^6.7.2",
-    "eslint-config-prettier": "^6.7.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "husky": "^3.1.0",
-    "lint-staged": "^9.5.0",
-    "node-sass": "^4.13.0",
+    "husky": "^4.2.2",
+    "lint-staged": "^10.0.7",
+    "node-sass": "^4.13.1",
     "prettier": "^1.19.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "rimraf": "^3.0.0",
-    "rollup": "^1.27.13",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.31.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-json": "^4.0.0",
     "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-postcss": "^2.0.3",
-    "rollup-plugin-sourcemaps": "^0.4.2",
-    "rollup-plugin-terser": "^5.1.3",
-    "rollup-plugin-typescript2": "^0.25.3",
-    "sass-loader": "^8.0.0",
-    "typescript": "^3.7.3"
+    "rollup-plugin-postcss": "^2.0.6",
+    "rollup-plugin-sourcemaps": "^0.5.0",
+    "rollup-plugin-terser": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.26.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "^3.7.5"
   },
   "peerDependencies": {
     "react": ">16.8.6",
@@ -77,18 +77,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkosir/react-doc-tab-template.git"
+    "url": "git+https://github.com/mkosir/react-demo-tab.git"
   },
   "author": "Marko Kosir <kosir.mar@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mkosir/react-doc-tab-template/issues"
+    "url": "https://github.com/mkosir/react-demo-tab/issues"
   },
-  "homepage": "https://github.com/mkosir/react-doc-tab-template#readme",
+  "homepage": "https://github.com/mkosir/react-demo-tab#readme",
   "keywords": [
     "react",
-    "doc-tab",
-    "doctab",
+    "demo-tab",
+    "demotab",
     "cli"
   ]
 }
