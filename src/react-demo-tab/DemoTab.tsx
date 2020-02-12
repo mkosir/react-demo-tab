@@ -40,8 +40,8 @@ type Props = {
   styleExt?: 'css' | 'scss';
 };
 
-const StoryTabReact: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }) => {
-  const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>('react-doc-tab', {
+const DemoTab: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }) => {
+  const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>('react-demo-tab', {
     mainTabIndex: 0,
     codeTabIndex: 0,
   });
@@ -62,8 +62,8 @@ const StoryTabReact: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'cs
         <Tab>Demo</Tab>
         <Tab>Code</Tab>
       </TabList>
-      <TabPanel className="react-doc-tab-demo">{children}</TabPanel>
-      <TabPanel style={{ fontSize: '14px' }} className="react-doc-tab-code">
+      <TabPanel className="tab-demo">{children}</TabPanel>
+      <TabPanel style={{ fontSize: '14px' }} className="tab-code">
         <Tabs
           defaultIndex={tabIndex.codeTabIndex}
           onSelect={(index: number) =>
@@ -101,4 +101,4 @@ const StoryTabReact: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'cs
   );
 };
 
-export default StoryTabReact;
+export default DemoTab;

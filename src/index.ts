@@ -1,3 +1,3 @@
-import ReactDocTabTemplate from './react-doc-tab-template/ReactDocTabTemplate';
+import DemoTab from './react-demo-tab/DemoTab';
 
-export default ReactDocTabTemplate;
+export default DemoTab;
