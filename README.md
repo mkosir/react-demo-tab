@@ -47,7 +47,7 @@ ReactDOM.render(<App />, document.getElementById('root'));
 
 ## Props
 
-Create a demo of a component that is passed as a child.
+Create demo of component that is passed as a child.
 
 Below is the complete list of possible props and their options:
 
