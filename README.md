@@ -34,9 +34,6 @@ const demoComponentStyle = `
   font-size: 14px;
   padding: 12px 26px;
   border-radius: 6px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
 }`;
 
 const App = () => {
