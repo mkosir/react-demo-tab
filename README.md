@@ -39,8 +39,6 @@ const demoComponentStyle = `
   transition-duration: 0.2s;
 }`;
 
-![](demo.gif);
-
 const App = () => {
   return (
     <DemoTab code={demoComponentCode} style={demoComponentStyle} codeExt="jsx" styleExt="css">
@@ -51,6 +49,8 @@ const App = () => {
 
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
+
+![](demo.gif);
 
 ## Development
 
