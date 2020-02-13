@@ -3,11 +3,11 @@ import React from 'react';
 import DemoTab from '../../src';
 import Demo from './ButtonRed';
 
-const code = `import React from 'react';
+const code = `import React, { FC } from 'react';
 
 import './ButtonRed.scss';
 
-const ButtonRed = () => <button className="btn-red">Red Button</button>;
+const ButtonRed: FC = () => <button className="btn-red">Red Button</button>;
 
 export default ButtonRed;`;
 
