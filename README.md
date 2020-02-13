@@ -5,8 +5,6 @@
 
 _React component to easily create demos of other components_
 
-![](demo.gif)
-
 ## Install
 
 npm `npm install -D react-demo-tab`  
@@ -15,6 +13,44 @@ yarn `yarn add -D react-demo-tab`
 ## Create demos with CLI tool
 
 Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-demo-tab-cli).
+
+## Example
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import DemoComponent from './ButtonGreen';
+
+const demoComponentCode = `
+import React from 'react';
+import './ButtonGreen.css';
+
+const ButtonGreen = () => <button className="btn-green">Green Button</button>;
+export default ButtonGreen;`;
+
+const demoComponentStyle = `
+.btn-green {
+  background-color: green;
+  font-size: 14px;
+  padding: 12px 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}`;
+
+![](demo.gif);
+
+const App = () => {
+  return (
+    <DemoTab code={demoComponentCode} style={demoComponentStyle} codeExt="jsx" styleExt="css">
+      <DemoComponent />
+    </DemoTab>
+  );
+};
+
+ReactDOM.render(<App />, document.getElementById('root'));
+```
 
 ## Development
 
