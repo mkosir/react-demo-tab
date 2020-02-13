@@ -43,7 +43,27 @@ const App = () => {
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
-![](demo.gif);
+![](demo.gif)
+
+## Props
+
+Create a demo of a component that is passed as a child.
+
+Below is the complete list of possible props and their options:
+
+> ▶︎ indicates optional prop and it's default value
+
+**code**: string  
+Demo code. Required.
+
+**style**: string ▶︎ `undefined`  
+Demo style.
+
+**codeExt**: 'jsx' | 'tsx' ▶︎ `jsx`  
+Code file extension image to be displayed.
+
+**styleExt**: 'css' | 'scss' ▶︎ `css`  
+Style file extension image to be displayed.
 
 ## Create demos with CLI tool
 
