@@ -10,10 +10,6 @@ _React component to easily create demos of other components_
 npm `npm install -D react-demo-tab`  
 yarn `yarn add -D react-demo-tab`
 
-## Create demos with CLI tool
-
-Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-demo-tab-cli).
-
 ## Example
 
 ```jsx
@@ -48,6 +44,10 @@ ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
 ![](demo.gif);
+
+## Create demos with CLI tool
+
+Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-demo-tab-cli).
 
 ## Development
 
