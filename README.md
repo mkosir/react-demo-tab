@@ -3,14 +3,18 @@
 [![npm version][npm-badge]][npm-url]
 [![Build Status][build-badge]][build-url]
 
-_[React DemoTab](https://github.com/mkosir/react-demo-tab)_
+_React component to easily create demos of other components_
 
-Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-demo-tab-cli).
+![](demo.gif)
 
 ## Install
 
 npm `npm install -D react-demo-tab`  
 yarn `yarn add -D react-demo-tab`
+
+## Create demos with CLI tool
+
+Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-demo-tab-cli).
 
 ## Development
 
