@@ -19,14 +19,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import DemoComponent from './ButtonGreen';
 
-const demoComponentCode = `
+const demoCode = `
 import React from 'react';
 import './ButtonGreen.css';
 
 const ButtonGreen = () => <button className="btn-green">Green Button</button>;
 export default ButtonGreen;`;
 
-const demoComponentStyle = `
+const demoStyle = `
 .btn-green {
   background-color: green;
   font-size: 14px;
@@ -36,7 +36,7 @@ const demoComponentStyle = `
 
 const App = () => {
   return (
-    <DemoTab code={demoComponentCode} style={demoComponentStyle} codeExt="jsx" styleExt="css">
+    <DemoTab code={demoCode} style={demoStyle} codeExt="jsx" styleExt="css">
       <DemoComponent />
     </DemoTab>
   );
