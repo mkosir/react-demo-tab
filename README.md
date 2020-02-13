@@ -12,6 +12,8 @@ yarn `yarn add -D react-demo-tab`
 
 ## Example
 
+![](demo.gif)
+
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -43,15 +45,13 @@ const App = () => {
 ReactDOM.render(<App />, document.getElementById('root'));
 ```
 
-![](demo.gif)
-
 ## Props
 
 Create a demo of a component that is passed as a child.
 
 Below is the complete list of possible props and their options:
 
-> ▶︎ indicates optional prop and it's default value
+> ▶︎ indicates optional prop with default value
 
 **code**: string  
 Demo code. Required.
