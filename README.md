@@ -12,7 +12,7 @@ yarn `yarn add -D react-demo-tab`
 
 ## Example
 
-![](demo.gif)
+![](demo-tab.gif)
 
 ```jsx
 import React from 'react';
