@@ -60,10 +60,10 @@ Demo code. Required.
 Demo style.
 
 **codeExt**: 'jsx' | 'tsx' ▶︎ `jsx`  
-Code file extension image to be displayed.
+Code file extension for image to be displayed.
 
 **styleExt**: 'css' | 'scss' ▶︎ `css`  
-Style file extension image to be displayed.
+Style file extension for image to be displayed.
 
 ## Create demos with CLI tool
 
