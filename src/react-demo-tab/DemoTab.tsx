@@ -28,14 +28,20 @@ function useLocalStorage<T>(
 }
 
 type Props = {
+  /**
+   * Demo code.
+   */
   code: string;
+  /**
+   * Demo style.
+   */
   style?: string;
   /**
-   * Code file extension.
+   * Code file extension for image to be displayed.
    */
   codeExt?: 'jsx' | 'tsx';
   /**
-   * Style file extension.
+   * Style file extension for image to be displayed.
    */
   styleExt?: 'css' | 'scss';
 };
