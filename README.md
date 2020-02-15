@@ -17,6 +17,7 @@ yarn `yarn add -D react-demo-tab`
 ```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
+import DemoTab from 'react-demo-tab';
 import DemoComponent from './ButtonGreen';
 
 const demoCode = `
