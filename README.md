@@ -36,7 +36,7 @@ const demoStyle = `
 
 const App = () => {
   return (
-    <DemoTab code={demoCode} style={demoStyle} codeExt="jsx" styleExt="css">
+    <DemoTab code={demoCode} style={demoStyle}>
       <DemoComponent />
     </DemoTab>
   );
