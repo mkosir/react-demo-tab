@@ -3,7 +3,7 @@
 [![npm version][npm-badge]][npm-url]
 [![Build Status][build-badge]][build-url]
 
-_React component to easily create demos of other components_
+_A React component to easily create demos of other components_
 
 ## Install
 
