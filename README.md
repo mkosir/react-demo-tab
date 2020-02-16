@@ -9,6 +9,10 @@ _A React component to easily create demos of other components_
 
 `npm install react-demo-tab`
 
+## Demo
+
+**[DemoTab example](https://mkosir.github.io/react-demo-tab)**
+
 ## Example
 
 ![](demo-tab.gif)
