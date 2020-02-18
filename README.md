@@ -7,7 +7,9 @@ _A React component to easily create demos of other components_
 
 ## Install
 
-`npm install react-demo-tab`
+```bash
+npm install react-demo-tab
+```
 
 ## Demo
 
