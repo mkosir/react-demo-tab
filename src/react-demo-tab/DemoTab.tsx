@@ -1,7 +1,6 @@
 import React, { FC, useState, useEffect } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-//@ts-ignore
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
@@ -58,7 +57,7 @@ const DemoTab: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'css', ch
     <Tabs
       defaultIndex={tabIndex.mainTabIndex}
       onSelect={(index: number) =>
-        setTabIndex(prevTabIndex => ({
+        setTabIndex((prevTabIndex) => ({
           ...prevTabIndex,
           mainTabIndex: index,
         }))
@@ -73,7 +72,7 @@ const DemoTab: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'css', ch
         <Tabs
           defaultIndex={tabIndex.codeTabIndex}
           onSelect={(index: number) =>
-            setTabIndex(prevTabIndex => ({
+            setTabIndex((prevTabIndex) => ({
               ...prevTabIndex,
               codeTabIndex: index,
             }))
