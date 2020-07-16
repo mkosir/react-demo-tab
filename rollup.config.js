@@ -50,7 +50,6 @@ export default {
     // Resolve source maps to the original source
     sourceMaps(),
     terser({
-      sourcemap: true,
       output: { comments: false },
       compress: {
         pure_getters: true,
