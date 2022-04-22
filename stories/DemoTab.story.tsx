@@ -1,10 +1,10 @@
-import React from 'react';
 import { storiesOf } from '@storybook/react';
+import React from 'react';
 
-import Default from './Default/_DefaultDemoTab';
 import ButtonGreen from './ButtonGreen/_ButtonGreenDemoTab';
 import ButtonRed from './ButtonRed/_ButtonRedDemoTab';
 import Counter from './Counter/_CounterDemoTab';
+import Default from './Default/_DefaultDemoTab';
 
 import './DemoTab.scss';
 
