@@ -1,4 +1,5 @@
 import commonjs from '@rollup/plugin-commonjs';
+import image from '@rollup/plugin-image';
 import typescript from '@rollup/plugin-typescript';
 import { defineConfig } from 'rollup';
 //@ts-ignore types package is broken - https://www.npmjs.com/package/@types/rollup-plugin-size-snapshot
@@ -45,6 +46,7 @@ const rollupConfig = defineConfig({
       // Compress and/or mangle variables in top level scope.
       toplevel: true,
     }),
+    image(),
     visualizer({
       filename: 'bundle-analysis.html',
       title: `${packageJson.name} - Rollup Visualizer`,
