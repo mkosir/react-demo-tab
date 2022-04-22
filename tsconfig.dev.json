@@ -1,5 +1,9 @@
 {
-  "extends": "./tsconfig.json",
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    // Stories as an example written in .js/.jsx
+    "allowJs": true
+  },
   "include": ["."],
   // Storybook
   "ts-node": {
