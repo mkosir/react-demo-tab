@@ -88,13 +88,13 @@ export const DemoTab: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'c
             )}
           </TabList>
           <TabPanel>
-            <SyntaxHighlighter language={codeExt} style={prism}>
+            <SyntaxHighlighter language={codeExt} style={prism} showLineNumbers={true}>
               {code}
             </SyntaxHighlighter>
           </TabPanel>
           {style && (
             <TabPanel>
-              <SyntaxHighlighter language={styleExt} style={prism}>
+              <SyntaxHighlighter language={styleExt} style={prism} showLineNumbers={true}>
                 {style}
               </SyntaxHighlighter>
             </TabPanel>
