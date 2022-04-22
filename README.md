@@ -1,9 +1,14 @@
 # React DemoTab 📑
 
 [![npm version][npm-badge]][npm-url]
-[![Build Status][build-badge]][build-url]
+[![CI][build-badge]][build-url]
+[![semantic-release][semantic-badge]][semantic-url]
+[![prettier][prettier-badge]][prettier-url]
+[![TypeScript][typescript-badge]][typescript-url]
 
 _A React component to easily create demos of other components_
+
+## [Demo](https://mkosir.github.io/react-demo-tab)
 
 ## Install
 
@@ -11,13 +16,9 @@ _A React component to easily create demos of other components_
 npm install react-demo-tab
 ```
 
-## Demo
-
-**[DemoTab example](https://mkosir.github.io/react-demo-tab)**
-
 ## Example
 
-![](demo-tab.gif)
+[![](demo-tab.gif)](https://mkosir.github.io/react-demo-tab/?path=/story/examples--button-green-jsx-css)
 
 ```jsx
 import React from 'react';
@@ -85,24 +86,6 @@ Build all the examples and starts storybook server on [localhost:9009](http://lo
 - `npm install`
 - `npm start`
 
-OR
-
-Clone this repo on your machine, navigate to its location in the terminal and run:
-
-```bash
-npm install
-npm link # link your local repo to your global packages
-npm run build:watch # build the files and watch for changes
-```
-
-Clone project repo that you wish to test with react-demo-tab library and run:
-
-```bash
-npm install
-npm link react-demo-tab # link your local copy into this project's node_modules
-npm start
-```
-
 **Start coding!** 🎉
 
 ## Built with DemoTab
@@ -117,5 +100,11 @@ All contributions are welcome!
 
 [npm-url]: https://www.npmjs.com/package/react-demo-tab
 [npm-badge]: https://img.shields.io/npm/v/react-demo-tab.svg
-[build-badge]: https://travis-ci.com/mkosir/react-demo-tab.svg
-[build-url]: https://travis-ci.com/mkosir/react-demo-tab
+[build-badge]: https://github.com/mkosir/react-demo-tab/actions/workflows/main.yml/badge.svg
+[build-url]: https://github.com/mkosir/react-demo-tab/actions/workflows/main.yml
+[semantic-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
+[semantic-url]: https://github.com/semantic-release/semantic-release
+[typescript-badge]: https://badges.frapsoft.com/typescript/code/typescript.svg?v=101
+[typescript-url]: https://github.com/microsoft/TypeScript
+[prettier-badge]: https://img.shields.io/badge/code_style-prettier-ff69b4.svg
+[prettier-url]: https://github.com/prettier/prettier
