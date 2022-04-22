@@ -1,8 +1,7 @@
-import { create } from '@storybook/theming/create';
+import { create } from '@storybook/theming';
 
-export default create({
+export const theme = create({
   base: 'light',
-
   brandTitle: 'React DemoTab 📑',
   brandUrl: 'https://github.com/mkosir/react-demo-tab',
 });
