@@ -1,6 +1,7 @@
 import React from 'react';
 
-import DemoTab from '../../src';
+import { DemoTab } from '../../src';
+
 import Demo from './ButtonGreen';
 
 const code = `import React from 'react';
