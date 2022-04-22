@@ -49,7 +49,7 @@ body:
           <DemoTab code={demoCode} style={demoStyle}>
             <DemoComponent />
           </DemoTab>
-        ``` 
+        ```
   - type: 'input'
     id: 'lib-version'
     attributes:
