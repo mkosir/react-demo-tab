@@ -42,6 +42,7 @@
     "@types/jest": "^27.4.1",
     "@types/react": "^18.0.6",
     "@types/react-dom": "^18.0.2",
+    "@types/react-syntax-highlighter": "^13.5.2",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
     "commitizen": "^4.2.4",
