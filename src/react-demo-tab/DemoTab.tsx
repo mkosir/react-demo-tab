@@ -1,12 +1,12 @@
 import React, { FC, useState, useEffect } from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
+import styleImgCSS from './img/css.png';
 import codeImg from './img/jsx.png';
 import styleImgSass from './img/sass.png';
-import styleImgCSS from './img/css.png';
 
 type LocalStorage = {
   mainTabIndex: number;
@@ -28,6 +28,10 @@ function useLocalStorage<T>(
 
 type Props = {
   /**
+   * Demo component.
+   */
+  children: React.ReactNode;
+  /**
    * Demo code.
    */
   code: string;
@@ -45,7 +49,13 @@ type Props = {
   styleExt?: 'css' | 'scss';
 };
 
-const DemoTab: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }) => {
+export const DemoTab: FC<Props> = ({
+  code,
+  style,
+  codeExt = 'jsx',
+  styleExt = 'css',
+  children,
+}) => {
   const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>('react-demo-tab', {
     mainTabIndex: 0,
     codeTabIndex: 0,
@@ -80,11 +90,11 @@ const DemoTab: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'css', ch
         >
           <TabList>
             <Tab>
-              <img src={codeImg} height="30" />
+              <img src={codeImg} height="30" alt="code-img" />
             </Tab>
             {style && (
               <Tab>
-                <img src={styleImg} height="30" />
+                <img src={styleImg} height="30" alt="style-img" />
               </Tab>
             )}
           </TabList>
@@ -105,5 +115,3 @@ const DemoTab: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'css', ch
     </Tabs>
   );
 };
-
-export default DemoTab;
