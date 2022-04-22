@@ -101,7 +101,7 @@ All contributions are welcome!
 
 [npm-url]: https://www.npmjs.com/package/react-demo-tab
 [npm-badge]: https://img.shields.io/npm/v/react-demo-tab.svg
-[size-badge]: https://badgen.net/bundlephobia/minzip/react-parallax-tilt
+[size-badge]: https://badgen.net/bundlephobia/minzip/react-demo-tab
 [build-badge]: https://github.com/mkosir/react-demo-tab/actions/workflows/main.yml/badge.svg
 [build-url]: https://github.com/mkosir/react-demo-tab/actions/workflows/main.yml
 [semantic-badge]: https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
