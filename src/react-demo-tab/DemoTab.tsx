@@ -13,13 +13,8 @@ type LocalStorage = {
   codeTabIndex: number;
 };
 
-function useLocalStorage<T>(
-  key: string,
-  initialValue: T | null = null,
-): [T, React.Dispatch<React.SetStateAction<T>>] {
-  const [value, setValue] = useState<T>(
-    JSON.parse(localStorage.getItem(key) as string) || initialValue,
-  );
+function useLocalStorage<T>(key: string, initialValue: T | null = null): [T, React.Dispatch<React.SetStateAction<T>>] {
+  const [value, setValue] = useState<T>(JSON.parse(localStorage.getItem(key) as string) || initialValue);
   useEffect(() => {
     localStorage.setItem(key, JSON.stringify(value));
   });
@@ -49,13 +44,7 @@ type Props = {
   styleExt?: 'css' | 'scss';
 };
 
-export const DemoTab: FC<Props> = ({
-  code,
-  style,
-  codeExt = 'jsx',
-  styleExt = 'css',
-  children,
-}) => {
+export const DemoTab: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }) => {
   const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>('react-demo-tab', {
     mainTabIndex: 0,
     codeTabIndex: 0,
