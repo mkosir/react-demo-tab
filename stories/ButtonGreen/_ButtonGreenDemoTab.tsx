@@ -26,10 +26,8 @@ const style = `.btn-green {
   background-color: #4caf50;
 }`;
 
-const _ButtonGreen = () => (
+export const _ButtonGreen = () => (
   <DemoTab code={code} style={style} codeExt="jsx" styleExt="css">
     <Demo />
   </DemoTab>
 );
-
-export default _ButtonGreen;
