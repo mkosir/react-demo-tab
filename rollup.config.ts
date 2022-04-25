@@ -37,7 +37,7 @@ const rollupConfig = defineConfig({
       declaration: true,
       declarationDir: 'types',
     }),
-    sizeSnapshot(),
+    sizeSnapshot({ matchSnapshot: Boolean(process.env.MATCH_SNAPSHOT) }),
     terser({
       output: { comments: false },
       compress: {
@@ -50,7 +50,7 @@ const rollupConfig = defineConfig({
     visualizer({
       filename: 'bundle-analysis.html',
       title: `${packageJson.name} - Rollup Visualizer`,
-      open: true,
+      open: false,
     }),
   ],
   // Ensure dependencies are not bundled with the library
