@@ -1,5 +1,5 @@
 {
-  "name": "react-demo-tab",
+  "name": "demo-tabs",
   "version": "0.0.0-development",
   "description": "A React component to easily create demos of other components",
   "module": "./dist/index.esm.js",
@@ -101,9 +101,9 @@
     "react-component",
     "demo-component",
     "demo",
-    "demo-tab",
-    "demotab",
+    "demo-tabs",
+    "demotabs",
     "code",
-    "tab"
+    "tabs"
   ]
 }
