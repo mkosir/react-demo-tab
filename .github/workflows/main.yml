@@ -63,7 +63,7 @@ jobs:
         with:
           branch: gh-pages
           folder: storybook-static
-          clean: true # Delete files from your deployment destination that no longer exist in your deployment source
+          clean: true
 
   npm-release:
     runs-on: ubuntu-latest
