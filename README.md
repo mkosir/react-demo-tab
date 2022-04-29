@@ -6,7 +6,7 @@
 [![prettier][prettier-badge]][prettier-url]
 [![TypeScript][typescript-badge]][typescript-url]
 
-_A React component to easily create demos of other components_
+_React component to easily create demos of other components_
 
 ## [Demo](https://mkosir.github.io/react-demo-tab)
 
