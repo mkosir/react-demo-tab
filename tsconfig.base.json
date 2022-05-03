@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,
+    "noEmit": true,
     "declaration": true,
     "declarationDir": "dist",
     "esModuleInterop": true,
@@ -9,6 +9,7 @@
     "lib": ["ESNext", "dom"],
     "module": "esnext",
     "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
     "noUnusedLocals": true,
@@ -24,5 +25,6 @@
     "skipLibCheck": true,
     "baseUrl": "src",
     "target": "ES6"
-  }
+  },
+  "exclude": ["dist"]
 }
