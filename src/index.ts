@@ -1,1 +1,1 @@
-export { DemoTab } from 'react-demo-tab/DemoTab';
+export { DemoTab } from './react-demo-tab/DemoTab';
