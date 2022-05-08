@@ -56,11 +56,8 @@ const rollupConfig = defineConfig([
         open: false,
       }),
     ],
-    // Ensure dependencies are not bundled with the library
-    external: [
-      //...Object.keys(packageJson.dependencies || {}),
-      ...Object.keys(packageJson.peerDependencies || {}),
-    ],
+    // Ensure peer dependencies are not bundled with the library
+    external: [...Object.keys(packageJson.peerDependencies || {})],
   },
   {
     input: 'src/index.ts',
