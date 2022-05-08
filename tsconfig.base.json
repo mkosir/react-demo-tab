@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
     "noEmit": true,
-    "declaration": true,
-    "declarationDir": "dist",
-    "esModuleInterop": true,
+    "outDir": "compiled",
+    "baseUrl": "src",
+    "paths": {
+      ".": ["."]
+    },
     "importHelpers": true,
     "jsx": "react",
     "lib": ["ESNext", "dom"],
@@ -14,7 +16,6 @@
     "noImplicitThis": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "outDir": "compiled",
     "resolveJsonModule": true,
     "pretty": true,
     "sourceMap": true,
@@ -23,7 +24,7 @@
     "stripInternal": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "baseUrl": "src",
+    "esModuleInterop": true,
     "target": "ES6"
   },
   "exclude": ["dist"]
