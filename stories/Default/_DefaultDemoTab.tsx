@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DemoTab } from '../../src';
+import { DemoTab } from 'index';
 
 import Demo from './Default';
 
