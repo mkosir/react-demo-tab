@@ -7,6 +7,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import styleImgCSS from './img/css.png';
 import codeImg from './img/jsx.png';
 import styleImgSass from './img/sass.png';
+import { DemoTabProps } from './types.public';
 
 type LocalStorage = {
   mainTabIndex: number;
@@ -21,30 +22,7 @@ function useLocalStorage<T>(key: string, initialValue: T | null = null): [T, Rea
   return [value, setValue];
 }
 
-type Props = {
-  /**
-   * Demo component.
-   */
-  children: React.ReactNode;
-  /**
-   * Demo code.
-   */
-  code: string;
-  /**
-   * Demo style.
-   */
-  style?: string;
-  /**
-   * Code file extension for image to be displayed.
-   */
-  codeExt?: 'jsx' | 'tsx';
-  /**
-   * Style file extension for image to be displayed.
-   */
-  styleExt?: 'css' | 'scss';
-};
-
-export const DemoTab: FC<Props> = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }) => {
+export const DemoTab: FC<DemoTabProps> = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }) => {
   const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>('react-demo-tab', {
     mainTabIndex: 0,
     codeTabIndex: 0,
