@@ -46,7 +46,6 @@ const rollupConfig = defineConfig([
         compress: {
           pure_getters: true,
         },
-        // Compress and/or mangle variables in top level scope.
         toplevel: true,
       }),
       image(),
@@ -57,10 +56,10 @@ const rollupConfig = defineConfig([
       }),
     ],
     external: [
-      // Ensure peer dependencies are not bundled with the library
+      // Ensure dependencies are not bundled with the library
       ...Object.keys(packageJson.peerDependencies || {}),
-      'react-tabs',
-      'react-syntax-highlighter',
+      ...Object.keys(packageJson.dependencies || {}),
+      'react-tabs/style/react-tabs.css',
     ],
   },
   {
@@ -74,6 +73,7 @@ const rollupConfig = defineConfig([
         },
       }),
     ],
+    external: ['react-tabs/style/react-tabs.css'],
   },
 ]);
 
