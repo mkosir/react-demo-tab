@@ -1,8 +1,8 @@
 import React, { FC, useState, useEffect } from 'react';
-import 'react-tabs/style/react-tabs.css';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
 import styleImgCSS from './img/css.png';
 import codeImg from './img/jsx.png';
