@@ -1,4 +1,5 @@
-import React, { FC, useState, useEffect } from 'react';
+import { useLocalStorage } from '@rehooks/local-storage';
+import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
@@ -14,31 +15,15 @@ type LocalStorage = {
   codeTabIndex: number;
 };
 
-function useLocalStorage<T>(key: string, initialValue: T | null = null): [T, React.Dispatch<React.SetStateAction<T>>] {
-  const [value, setValue] = useState<T>(JSON.parse(localStorage.getItem(key) as string) || initialValue);
-  useEffect(() => {
-    localStorage.setItem(key, JSON.stringify(value));
-  });
-  return [value, setValue];
-}
-
-export const DemoTab: FC<DemoTabProps> = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }) => {
-  const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>('react-demo-tab', {
-    mainTabIndex: 0,
-    codeTabIndex: 0,
-  });
+export const DemoTab = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }: DemoTabProps) => {
+  const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>('react-demo-tab', { mainTabIndex: 0, codeTabIndex: 0 });
 
   const styleImg = styleExt === 'css' ? styleImgCSS : styleImgSass;
 
   return (
     <Tabs
       defaultIndex={tabIndex.mainTabIndex}
-      onSelect={(index: number) =>
-        setTabIndex((prevTabIndex) => ({
-          ...prevTabIndex,
-          mainTabIndex: index,
-        }))
-      }
+      onSelect={(index: number) => setTabIndex({ mainTabIndex: index, codeTabIndex: tabIndex.codeTabIndex })}
     >
       <TabList>
         <Tab>Demo</Tab>
@@ -48,12 +33,7 @@ export const DemoTab: FC<DemoTabProps> = ({ code, style, codeExt = 'jsx', styleE
       <TabPanel style={{ fontSize: '14px' }} className="tab-code">
         <Tabs
           defaultIndex={tabIndex.codeTabIndex}
-          onSelect={(index: number) =>
-            setTabIndex((prevTabIndex) => ({
-              ...prevTabIndex,
-              codeTabIndex: index,
-            }))
-          }
+          onSelect={(index: number) => setTabIndex({ mainTabIndex: tabIndex.mainTabIndex, codeTabIndex: index })}
         >
           <TabList>
             <Tab>
