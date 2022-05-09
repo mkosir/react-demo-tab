@@ -8,12 +8,8 @@ import 'react-tabs/style/react-tabs.css';
 import styleImgCSS from './img/css.png';
 import codeImg from './img/jsx.png';
 import styleImgSass from './img/sass.png';
+import { LocalStorage } from './types';
 import { DemoTabProps } from './types.public';
-
-type LocalStorage = {
-  mainTabIndex: number;
-  codeTabIndex: number;
-};
 
 export const DemoTab = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }: DemoTabProps) => {
   const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>('react-demo-tab', { mainTabIndex: 0, codeTabIndex: 0 });
