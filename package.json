@@ -1,7 +1,7 @@
 {
   "name": "react-demo-tab",
   "version": "0.0.0-development",
-  "description": "2React component to easily create demos of other components",
+  "description": "React component to easily create demos of other components",
   "main": "./dist/index.umd.js",
   "module": "./dist/index.esm.js",
   "types": "./dist/index.d.ts",
