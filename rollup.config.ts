@@ -56,8 +56,12 @@ const rollupConfig = defineConfig([
         open: false,
       }),
     ],
-    // Ensure peer dependencies are not bundled with the library
-    external: [...Object.keys(packageJson.peerDependencies || {})],
+    external: [
+      // Ensure peer dependencies are not bundled with the library
+      ...Object.keys(packageJson.peerDependencies || {}),
+      'react-tabs',
+      'react-syntax-highlighter',
+    ],
   },
   {
     input: 'src/index.ts',
