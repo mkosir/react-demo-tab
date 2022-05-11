@@ -72,15 +72,15 @@ Code file extension for image to be displayed.
 **styleExt**: 'css' | 'scss' ▶︎ `css`  
 Style file extension for image to be displayed.
 
-## Create demos with CLI tool
+## Create demos with CLI
 
-Instead of manually creating demos, automate the process with [DemoTab CLI tool](https://github.com/mkosir/react-demo-tab-cli).
+Instead of manually creating demos, automate the process with [DemoZap CLI](https://github.com/mkosir/demozap).
 
 ## Development
 
 _Easily set up a local development environment!_
 
-Build all the examples and starts storybook server on [localhost:9009](http://localhost:9009):
+Build all the examples and starts storybook server on [localhost](http://localhost:9009):
 
 - clone
 - `npm install`
@@ -90,9 +90,9 @@ Build all the examples and starts storybook server on [localhost:9009](http://lo
 
 ## Built with DemoTab
 
-- React Tilt - [Repo](https://github.com/mkosir/react-parallax-tilt) - [DemoTab](https://mkosir.github.io/react-parallax-tilt)
-- Mighty Mouse - [Repo](https://github.com/mkosir/react-hook-mighty-mouse) - [DemoTab](https://mkosir.github.io/react-hook-mighty-mouse)
-- Magnetic Board - [Repo](https://github.com/mkosir/react-magnetic-board) - [DemoTab](https://mkosir.github.io/react-magnetic-board)
+- [React Tilt](https://github.com/mkosir/react-parallax-tilt) - [DemoTab](https://mkosir.github.io/react-parallax-tilt)
+- [Mighty Mouse](https://github.com/mkosir/react-hook-mighty-mouse) - [DemoTab](https://mkosir.github.io/react-hook-mighty-mouse)
+- [Magnetic Board](https://github.com/mkosir/react-magnetic-board) - [DemoTab](https://mkosir.github.io/react-magnetic-board)
 
 ## Contributing
 
