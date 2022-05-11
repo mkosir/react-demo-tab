@@ -80,7 +80,7 @@ Instead of manually creating demos, automate the process with [DemoZap CLI](http
 
 _Easily set up a local development environment!_
 
-Build all the examples and starts storybook server on [localhost](http://localhost:9009):
+Build project and start storybook on [localhost](http://localhost:9009):
 
 - clone
 - `npm install`
