@@ -11,8 +11,10 @@ import styleImgSass from './img/sass.png';
 import { LocalStorage } from './types';
 import { DemoTabProps } from './types.public';
 
+const localStorageKey = 'react-demo-tab';
+
 export const DemoTab = ({ code, style, codeExt = 'jsx', styleExt = 'css', children }: DemoTabProps) => {
-  const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>('react-demo-tab', { mainTabIndex: 0, codeTabIndex: 0 });
+  const [tabIndex, setTabIndex] = useLocalStorage<LocalStorage>(localStorageKey, { mainTabIndex: 0, codeTabIndex: 0 });
 
   const styleImg = styleExt === 'css' ? styleImgCSS : styleImgSass;
 
