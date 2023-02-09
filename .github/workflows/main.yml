@@ -5,25 +5,23 @@ on: push
 jobs:
   validate:
     runs-on: ubuntu-latest
-    env:
-      MATCH_SNAPSHOT: true
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
 
       - name: Cache dependencies ⚡
-        id: cache
-        uses: actions/cache@v2
+        id: cache_dependencies
+        uses: actions/cache@v3
         with:
           path: node_modules
           key: node-modules-${{ hashFiles('package-lock.json') }}
 
       - name: Install dependencies 🔧
-        if: steps.cache.outputs.cache-hit != 'true'
+        if: steps.cache_dependencies.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Lint ✅
@@ -39,27 +37,27 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
 
       - name: Cache dependencies ⚡
-        id: cache
-        uses: actions/cache@v2
+        id: cache_dependencies
+        uses: actions/cache@v3
         with:
           path: node_modules
           key: node-modules-${{ hashFiles('package-lock.json') }}
 
       - name: Install dependencies 🔧
-        if: steps.cache.outputs.cache-hit != 'true'
+        if: steps.cache_dependencies.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Build 🏗️
         run: npm run storybook-build
 
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: storybook-static
@@ -74,20 +72,20 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+        uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '18.x'
 
       - name: Cache dependencies ⚡
-        id: cache
-        uses: actions/cache@v2
+        id: cache_dependencies
+        uses: actions/cache@v3
         with:
           path: node_modules
           key: node-modules-${{ hashFiles('package-lock.json') }}
 
       - name: Install dependencies 🔧
-        if: steps.cache.outputs.cache-hit != 'true'
+        if: steps.cache_dependencies.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Build 🏗️
