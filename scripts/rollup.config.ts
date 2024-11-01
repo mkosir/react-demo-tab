@@ -5,16 +5,17 @@ import typescript from '@rollup/plugin-typescript';
 import { defineConfig } from 'rollup';
 import dts from 'rollup-plugin-dts';
 
-import packageJson from './package.json' assert { type: 'json' };
-import tsConfig from './tsconfig.base.json' assert { type: 'json' };
+import packageJson from '../package.json' assert { type: 'json' };
+import tsConfig from '../tsconfig.base.json' assert { type: 'json' };
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-const inputFile = 'src/index.ts';
+const PATH_INPUT_FILE = 'src/index.ts';
+const PATH_TSCONFIG = './tsconfig.prod.json';
 
 const rollupConfig = defineConfig([
   {
-    input: inputFile,
+    input: PATH_INPUT_FILE,
     output: [
       {
         file: packageJson.main,
@@ -38,7 +39,7 @@ const rollupConfig = defineConfig([
     plugins: [
       commonjs(),
       typescript({
-        tsconfig: './tsconfig.prod.json',
+        tsconfig: PATH_TSCONFIG,
         sourceMap: !isProduction,
       }),
       terser({
@@ -58,7 +59,7 @@ const rollupConfig = defineConfig([
     ],
   },
   {
-    input: inputFile,
+    input: PATH_INPUT_FILE,
     output: { file: packageJson.types, format: 'esm' },
     plugins: [
       dts({

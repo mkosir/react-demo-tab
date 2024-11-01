@@ -1,5 +1,4 @@
 {
-  "*": ["pretty-quick --staged"],
-  "*.{js,jsx,ts,tsx}": ["eslint --max-warnings 0"],
-  "*.{ts,tsx}": ["tsc-files --noEmit -p tsconfig.dev.json src/types/images.d.ts"]
+  "*": ["prettier --write --ignore-unknown"],
+  "*.{js,jsx,ts,tsx}": ["eslint --max-warnings 0"]
 }
