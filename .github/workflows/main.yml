@@ -2,6 +2,9 @@ name: CI
 
 on: push
 
+env:
+  FOLDER_PATH_STORYBOOK_BUILD: ./build-storybook-static
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -60,7 +63,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
-          folder: storybook-static
+          folder: ${{ env.FOLDER_PATH_STORYBOOK_BUILD }}
           clean: true
 
   npm-release:
