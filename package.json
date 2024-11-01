@@ -34,6 +34,7 @@
     "@rollup/plugin-image": "3.0.2",
     "@rollup/plugin-terser": "0.4.0",
     "@rollup/plugin-typescript": "11.0.0",
+    "@storybook/addon-styling": "2.0.0",
     "@storybook/addon-webpack5-compiler-swc": "1.0.5",
     "@storybook/manager-api": "8.4.1",
     "@storybook/react": "8.4.1",
