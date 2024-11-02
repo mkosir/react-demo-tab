@@ -4,7 +4,7 @@
     // Stories are written in .js/.jsx
     "allowJs": true
   },
-  "include": ["."],
+  "include": [".", ".storybook/**/*", ".commitlintrc.ts"],
   // Storybook
   "ts-node": {
     "compilerOptions": {

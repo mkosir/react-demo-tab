@@ -3,7 +3,7 @@ import image from '@rollup/plugin-image';
 import terser from '@rollup/plugin-terser';
 import typescript from '@rollup/plugin-typescript';
 import { defineConfig } from 'rollup';
-import dts from 'rollup-plugin-dts';
+import { dts } from 'rollup-plugin-dts';
 
 import packageJson from '../package.json' assert { type: 'json' };
 import tsConfig from '../tsconfig.base.json' assert { type: 'json' };
@@ -53,8 +53,8 @@ const rollupConfig = defineConfig([
     ],
     external: [
       // Ensure dependencies are not bundled with the library
-      ...Object.keys(packageJson.peerDependencies || {}),
-      ...Object.keys(packageJson.dependencies || {}),
+      ...Object.keys(packageJson.peerDependencies),
+      ...Object.keys(packageJson.dependencies),
       'react-tabs/style/react-tabs.css',
     ],
   },
@@ -64,7 +64,7 @@ const rollupConfig = defineConfig([
     plugins: [
       dts({
         compilerOptions: {
-          baseUrl: tsConfig.compilerOptions.baseUrl,
+          baseUrl: './src',
           paths: tsConfig.compilerOptions.paths,
         },
       }),

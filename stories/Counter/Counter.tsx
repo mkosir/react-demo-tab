@@ -5,7 +5,7 @@ const Counter = () => {
 
   const onCountInc = () => setCount(count + 1);
 
-  const msg = `Button clicked ${count} ${count > 1 ? 'times' : 'time'}`;
+  const msg = `Button clicked ${count.toString()} ${count > 1 ? 'times' : 'time'}`;
 
   return (
     <>
