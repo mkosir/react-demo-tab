@@ -17,7 +17,7 @@ npm install react-demo-tab
 
 ## Example
 
-[![](misc/demo-tab.gif)](https://mkosir.github.io/react-demo-tab/?path=/story/examples--button-green-jsx-css)
+[![](misc/demo-tab.gif)](https://mkosir.github.io/react-demo-tab/?path=/story/examples--button-green)
 
 ```jsx
 import React from 'react';
