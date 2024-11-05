@@ -1,10 +1,10 @@
 import type { Meta } from '@storybook/react';
 import React from 'react';
 
-import { _ButtonGreen } from './ButtonGreen/_ButtonGreenDemoTab';
-import { _ButtonRed } from './ButtonRed/_ButtonRedDemoTab';
-import { _Counter } from './Counter/_CounterDemoTab';
-import { _Default } from './Default/_DefaultDemoTab';
+import { _ButtonGreen } from './ButtonGreen/_ButtonGreen';
+import { _ButtonRed } from './ButtonRed/_ButtonRed';
+import { _Counter } from './Counter/_Counter';
+import { _Default } from './Default/_Default';
 
 import './DemoTab.scss';
 
