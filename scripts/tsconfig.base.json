@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "noEmit": true,
-    "outDir": "compiled",
-    "baseUrl": "src",
+    "outDir": "../compiled",
+    "baseUrl": "../src",
     "paths": {
       ".": ["."]
     },
@@ -11,6 +11,7 @@
     "lib": ["ESNext", "dom"],
     "module": "ESNext",
     "moduleResolution": "Bundler",
+    "target": "ES6",
     "allowSyntheticDefaultImports": true,
     "noImplicitAny": true,
     "noImplicitThis": true,
@@ -25,7 +26,6 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "target": "ES6"
-  },
-  "exclude": ["dist"]
+    "allowJs": true
+  }
 }

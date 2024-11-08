@@ -6,12 +6,13 @@ import { defineConfig } from 'rollup';
 import { dts } from 'rollup-plugin-dts';
 
 import packageJson from '../package.json' assert { type: 'json' };
-import tsConfig from '../tsconfig.base.json' assert { type: 'json' };
+
+import tsConfig from './tsconfig.base.json' with { type: 'json' };
 
 const isProduction = process.env.NODE_ENV === 'production';
 
 const PATH_INPUT_FILE = 'src/index.ts';
-const PATH_TSCONFIG = './tsconfig.prod.json';
+const PATH_TSCONFIG_BUILD = 'scripts/tsconfig.build.json';
 
 const rollupConfig = defineConfig([
   {
@@ -39,7 +40,7 @@ const rollupConfig = defineConfig([
     plugins: [
       commonjs(),
       typescript({
-        tsconfig: PATH_TSCONFIG,
+        tsconfig: PATH_TSCONFIG_BUILD,
         sourceMap: !isProduction,
       }),
       terser({

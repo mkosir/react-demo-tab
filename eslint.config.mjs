@@ -35,7 +35,7 @@ export default tseslint.config(
     },
     settings: {
       'import/resolver': {
-        typescript: { project: 'tsconfig.dev.json' },
+        typescript: { project: './tsconfig.dev.json' },
       },
       react: { version: 'detect' },
     },
