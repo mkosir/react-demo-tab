@@ -40,7 +40,7 @@
     "@storybook/react-webpack5": "8.4.6",
     "@storybook/theming": "8.4.6",
     "@types/eslint": "9.6.1",
-    "@types/react": "18.3.12",
+    "@types/react": "18.3.13",
     "@types/react-dom": "18.3.1",
     "@types/react-syntax-highlighter": "15.5.13",
     "commitizen": "4.3.1",
@@ -78,7 +78,7 @@
   },
   "license": "MIT",
   "author": "Marko Kosir <kosir.mar@gmail.com>",
-  "homepage": "https://demozap.github.io/react-demo-tab",
+  "homepage": "https://github.com/demozap/react-demo-tab",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/demozap/react-demo-tab.git"
