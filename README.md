@@ -5,7 +5,7 @@
 [![semantic-release][semantic-badge]][semantic-url]
 [![TypeScript][typescript-badge]][typescript-url]
 
-_React component to easily create demos of other components_
+_Easily create React demo components_
 
 ## [Demo](https://mkosir.github.io/react-demo-tab)
 
@@ -20,13 +20,11 @@ npm install react-demo-tab
 [![](misc/demo-tab.gif)](https://mkosir.github.io/react-demo-tab/?path=/story/examples--button-green)
 
 ```jsx
-import React from 'react';
 import ReactDOM from 'react-dom';
 import DemoTab from 'react-demo-tab';
 import DemoComponent from './ButtonGreen';
 
 const demoCode = `
-import React from 'react';
 import './ButtonGreen.css';
 
 const ButtonGreen = () => <button className="btn-green">Green Button</button>;

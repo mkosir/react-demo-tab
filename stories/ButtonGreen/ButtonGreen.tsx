@@ -1,5 +1,3 @@
-import React from 'react';
-
 import './ButtonGreen.css';
 
 const ButtonGreen = () => <button className="btn-green">Green Button</button>;

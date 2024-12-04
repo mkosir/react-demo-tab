@@ -1,12 +1,8 @@
-import React from 'react';
-
 import { DemoTab } from 'index';
 
 import Demo from './ButtonRed';
 
-const code = `import React from 'react';
-
-import './ButtonRed.scss';
+const code = `import './ButtonRed.scss';
 
 const ButtonRed = () => <button className="btn-red">Red Button</button>;
 

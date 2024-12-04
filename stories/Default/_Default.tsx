@@ -1,12 +1,8 @@
-import React from 'react';
-
 import { DemoTab } from 'index';
 
 import Demo from './Default';
 
-const code = `import React from 'react';
-
-const Default = () => <h3>DemoTab 📑</h3>;
+const code = `const Default = () => <h3>DemoTab 📑</h3>;
 
 export default Default;`;
 

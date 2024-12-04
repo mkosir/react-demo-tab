@@ -1,10 +1,8 @@
-import React from 'react';
-
 import { DemoTab } from 'index';
 
 import Demo from './Counter';
 
-const code = `import React, { useState } from 'react';
+const code = `import { useState } from 'react';
 
 const Counter = () => {
   const [count, setCount] = useState(0);

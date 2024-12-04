@@ -1,5 +1,4 @@
 import { useLocalStorage } from '@rehooks/local-storage';
-import React from 'react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { prism } from 'react-syntax-highlighter/dist/esm/styles/prism';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';

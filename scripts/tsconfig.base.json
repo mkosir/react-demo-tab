@@ -7,7 +7,7 @@
       ".": ["."]
     },
     "importHelpers": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "lib": ["ESNext", "dom"],
     "module": "ESNext",
     "moduleResolution": "Bundler",

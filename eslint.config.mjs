@@ -41,7 +41,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ['**/*.{js,ts,tsx}'],
+    files: ['**/*.{js,ts,jsx,tsx}'],
 
     plugins: {
       // Remove once released - https://github.com/facebook/react/pull/30774
@@ -56,6 +56,7 @@ export default tseslint.config(
       ...eslintPluginReactHooks.configs.recommended.rules,
 
       'react/jsx-sort-props': ['error', { callbacksLast: true, shorthandFirst: true }],
+      'react/react-in-jsx-scope': 'off',
 
       'no-undef': 'off',
       'prefer-template': 'error',
