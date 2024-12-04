@@ -78,18 +78,19 @@
   },
   "license": "MIT",
   "author": "Marko Kosir <kosir.mar@gmail.com>",
-  "homepage": "https://mkosir.github.io/react-demo-tab",
+  "homepage": "https://demozap.github.io/react-demo-tab",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mkosir/react-demo-tab.git"
+    "url": "git+https://github.com/demozap/react-demo-tab.git"
   },
   "bugs": {
-    "url": "https://github.com/mkosir/react-demo-tab/issues"
+    "url": "https://github.com/demozap/react-demo-tab/issues"
   },
   "keywords": [
     "react",
     "react-component",
     "demo-component",
+    "demozap",
     "demo",
     "demo-tab",
     "demotab",
